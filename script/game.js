@@ -82,8 +82,8 @@ const playerCheck = ({ target }) => {
 }
 
 const startGame = () => {
-	pl1.innerHTML = 'felipe'
-	pl2.innerHTML = 'ke'
+	pl1.innerHTML = player1
+	pl2.innerHTML = player2
 	scorePlayer1.innerHTML = 0
 	scorePlayer2.innerHTML = 0
 	playerName.innerHTML = localStorage.getItem('player1')
