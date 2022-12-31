@@ -1,11 +1,6 @@
-localStorage.setItem('player1', 'Felipe')
-localStorage.setItem('player2', 'Ketlin')
-
 const containerVictory = document.querySelector('.container-victory')
 const arraySpan = document.querySelectorAll('.table')
 const playerName = document.querySelector('.player-name')
-let scorePlayer1 = document.querySelector('.score-player1')
-let scorePlayer2 = document.querySelector('.score-player2')
 
 const player1 = localStorage.getItem('player1')
 const player2 = localStorage.getItem('player2')
@@ -87,10 +82,12 @@ const playerCheck = ({ target }) => {
 }
 
 const startGame = () => {
+	pl1.innerHTML = 'felipe'
+	pl2.innerHTML = 'ke'
 	scorePlayer1.innerHTML = 0
 	scorePlayer2.innerHTML = 0
 	playerName.innerHTML = localStorage.getItem('player1')
-
+	
 	arraySpan.forEach((element) => {
 		element.addEventListener('click', playerCheck)
 	})

@@ -7,7 +7,7 @@ const saveName = ({ target }) => {
 const loginSubmit = (event) => {
   event.preventDefault()
 
-  window.location = 'pages/game.html'
+  window.location = 'pages/game.htm'
 }
 
 player1.addEventListener('input', saveName)
