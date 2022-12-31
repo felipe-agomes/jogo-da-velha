@@ -1,0 +1,113 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: linear-gradient(to top, #b0c4de, #6495ed);
+	min-height: 400px;
+	height: 100vh;
+	background-repeat: no-repeat;
+	font-family: sans-serif;
+}
+
+header {
+	margin: 10px auto;
+	width: 200px;
+}
+
+header .player h2 {
+	font-size: 1rem;
+	text-align: center;
+	color: #0000ff;
+}
+
+.container {
+	margin: 20px auto;
+	display: flex;
+	gap: 20px;
+	align-items: flex-start;
+	justify-content: center;
+	aspect-ratio: 1/1;
+	height: 300px;
+	width: 400px;
+	background: #ddd;
+	border-radius: 10px;
+	box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
+	padding: 50px 0;
+}
+
+.container .score {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+.container .score .player {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.container .score h2 {
+	margin-bottom: 20px;
+}
+
+.container .score p {
+	margin-bottom: 10px;
+	text-align: end;
+}
+
+.container .jogo-da-velha {
+	aspect-ratio: 1/1;
+	display: flex;
+	background: #f1f1f1;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 200px;
+	height: 200px;
+}
+
+.jogo-da-velha span.table {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 33.33%;
+	height: 33.33%;
+	border: solid 1px;
+}
+
+.container-victory {
+	position: absolute;
+	display: flex;
+	align-items: cente;
+	flex-direction: column;
+	border-radius: 10px;
+	width: 400px;
+	background: linear-gradient(to top, #ffa500, #f0e68c);
+	padding: 30px 0;
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+	display: none;
+}
+
+.container-victory h2 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.container-victory div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.container-victory div button {
+	width: 50px;
+	border-radius: 5px;
+	border: none;
+	background: #00bfff;
+	padding: 10px;
+	cursor: pointer;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../style/game.css" />
+		<title>Jogo da Velha</title>
+	</head>
+	<body>
+		<header>
+			<div class="player">
+				<h2>Jogador(a) da vez <span class="player-name"></span></h2>
+			</div>
+		</header>
+		<div class="container">
+			<div class="score">
+				<h2>Pontuação</h2>
+				<div class="player">
+					<div class="icon">
+						<p>❌</p>
+					</div>
+					<p>Felipe: <span class="score-player1"></span></p>
+				</div>
+				<div class="player">
+					<div class="icon">
+						<p>⭕</p>
+					</div>
+					<p>Ketlin: <span class="score-player2"></span></p>
+				</div>
+			</div>
+			<div class="jogo-da-velha">
+				<span class="table"></span>
+				<span class="table"></span>
+				<span class="table"></span>
+				<span class="table"></span>
+				<span class="table"></span>
+				<span class="table"></span>
+				<span class="table"></span>
+				<span class="table"></span>
+				<span class="table"></span>
+				<div class="container-victory">
+					<h2>Jogador(a) <span class="winner"></span> ganhou!</h2>
+					<div>
+						<p>Jogar novamente?</p>
+						<button class="yes">Sim</button>
+						<button class="no">Não</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../script/game.js"></script>
+	</body>
+</html>
